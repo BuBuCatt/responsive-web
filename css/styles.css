@@ -1,5 +1,68 @@
+/* google font */
+/* lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* color variables */
+:root{
+    --body-color:#F5F0FF;
+    --title-color:#220953;
+}
+
+/* nav css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--body-color, #F5F0FF);
+    padding: 10px 20px;
+  }
+
+  .nav-brand {
+    font-family: Lora;
+    font-size: 24px;
+    color: #5A189A;
+    font-weight: 500;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  .nav-title{
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+  }
+
+
+
+
+  .nav-items a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--title-color, #220953);
+
+  }
+
+
+
+
+  
+  .nav-items a:hover {
+    color: #3C096C;
+  }
+  
