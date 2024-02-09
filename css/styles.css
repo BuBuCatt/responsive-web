@@ -1,5 +1,39 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+footer {
+    background-color: #1E0849;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0; 
+    position: relative;
+}
+.yoga{
+    margin-right:200px;
+}
+
+.contact{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+.footer-section{
+    margin-left:50px;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-section, .yoga {
+        width: 100%;
+    }
+
+   
+
+
 }
