@@ -7,7 +7,12 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+body{
+  min-height: 100vh;
+  background: var(--body-color, #F5F0FF);
 }
 
 /* color variables */
@@ -16,14 +21,14 @@
     --title-color:#220953;
 }
 
-/* nav css */
+/* ------ nav css --------- */
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--body-color, #F5F0FF);
-    padding: 10px 20px;
+    padding: 20px 40px;
+  
+
+
   }
 
   .nav-brand {
@@ -35,7 +40,26 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
   }
+
+  .nav-items{
+    width: 100%;
+    display: flex;
+
+  }
+
+
+
+  .nav-items ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
 
 
   .nav-title{
@@ -52,17 +76,15 @@
   .nav-items a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 20px;
     font-size: 16px;
     color: var(--title-color, #220953);
 
   }
-
-
-
-
   
   .nav-items a:hover {
     color: #3C096C;
   }
+
+
   
