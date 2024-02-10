@@ -7,7 +7,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 body{
@@ -19,6 +19,7 @@ body{
 :root{
     --body-color:#F5F0FF;
     --title-color:#220953;
+    --white-color:#ffffff;
 }
 
 /* ------ nav css --------- */
@@ -79,12 +80,119 @@ body{
     margin: 20px;
     font-size: 16px;
     color: var(--title-color, #220953);
+    font-weight: 500;
 
   }
   
   .nav-items a:hover {
     color: #3C096C;
   }
+
+  .moon-icon{
+    margin: 20px;
+  }
+
+  /* ---- Home section CSS ---- */
+ #home{
+
+  margin: 48px 0;
+
+ }
+
+  .home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside h2{
+    color: var(--title-color, #220953);
+    font-family: Lora;
+    font-size: clamp(1.5rem, 5vw + 1rem, 96px);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  aside p{
+    color: var(--text-color, #4B3E65);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 32px;
+  }
+
+  aside h2 span {
+    display: inline-block;
+    transform: rotate(10deg);
+    color: var(--white-color, #FFF);
+    border-radius: 10px;
+    vertical-align: middle;
+    padding: 5px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+}
+
+  .home-star-pic{
+    width: 70px;
+    height: auto; 
+
+  }
+
+
+
+  .home-btn{
+    margin-bottom: 30px;
+  }
+
+
+
+ .home-btn button{
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 64px;
+    color: var(--white-color, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  
+  }
+
+  .yoga-class-number{
+    display: flex;
+    color: var(--title-color, #220953);
+    font-family: Lora;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+
+  .yoga-class-number h3{
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .yoga-class-number p{
+    color: var(--title-color, #220953);
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 400;
+
+  }
+
+
+  .home-pic img{
+    width: 400px;
+    height: auto;
+  }
+
+
+
+
+
 
 
   
