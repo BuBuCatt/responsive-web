@@ -1,3 +1,7 @@
+.root{
+    --body-color:#FF52AF;
+    --title-color:#9F53FF;
+}
 footer {
     background-color: #1E0849;
     color: white;
@@ -10,6 +14,14 @@ footer {
 }
 .yoga{
     margin-right:200px;
+}
+.yoga h3{
+    font-family:'Lora';
+    background: var(--gradient-color,
+     linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+     background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .contact{
