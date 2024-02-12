@@ -1,104 +1,200 @@
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.insta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  
-  .newsletter-container {
-    background: linear-gradient(135deg, #FF7BAC 0%, #B77BFF 100%);
-    border-radius: 25px;
-    color: white;
-    padding: 40px;
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  }
+.insta p {
+  color: var(--title-color, #220953);
+  text-align: center;
 
-  .newsletter-header {
-    margin-bottom: 1em;
-  }
+  font-family: 'Lora';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-  .newsletter-description {
-    margin-bottom: 1.5em;
-  }
+.yopic {
+  width: 200px;
+  height: 300px;
+  margin: 50px;
+}
 
-  .newsletter-input {
-    padding: 1em;
-    border: none;
-    border-radius: 25px;
-    margin-right: -50px;
-    flex-grow: 1;
-  }
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
-  .newsletter-button {
-    background-color: #6A0DAD;
-    border: none;
-    color: white;
-    padding: 1em 2em;
-    margin-left: -50px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1em;
-  }
+.text-content p {
+  margin: 0;
+  text-align: center;
+}
 
-  .newsletter-button:hover {
-    background-color: #5800AD;
-  }
+.hashtag {
+  color: #FF52AF;
+  font-weight: bold;
+}
 
-  .subscription-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5em;
-  }
+.flw {
+  border-radius: 64px;
+  background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  display: inline-flex;
+  height: 88px;
+  padding: 17px 17px 16px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  color: white;
+}
+
+.downinsta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.yo {
+  width: 400px;
+  height: 300px;
+  margin: 100px;
+}
+section{
+  width:100%;
+  display: inline-flex;
+padding: 48px 0px 88px 0px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.newsletter-container {
+  background: linear-gradient(135deg, #FF7BAC 0%, #B77BFF 100%);
+  border-radius: 25px;
+  color: white;
+  padding: 0px 224px;
+  width: 1440px;
+  height:374px;
+  align-items:center;
+  justify-content:center;
+ 
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-header {
+  font-family: 'Lora';
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align:center;
+}
+
+.newsletter-description {
+  margin-bottom: 1.5em;
+}
+
+.newsletter-input {
+  padding: 1em;
+  border: none;
+  border-radius: 25px;
+  margin-right: -50px;
+  flex-grow: 1;
+  height: 50px;
+}
+
+.newsletter-button {
+  border-radius: 64px;
+  background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  box-shadow: 0px 4px 12px 0px rgba(91, 10, 255, 0.25);
+  height: 50px;
+  border: none;
+  color: white;
+  padding: 1em 2em;
+  margin-left: -50px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.newsletter-button:hover {
+  background-color: #5800AD;
+}
+
+.subscription-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5em;
+}
 
 /* footer */
- .root{   --body-color:#FF52AF;
-    --title-color:#9F53FF;
+.root {
+  --body-color: #FF52AF;
+  --title-color: #9F53FF;
 }
+
 footer {
-    background-color: #1E0849;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 32px 0; 
-    position: relative;
-}
-.yoga{
-    margin-right:200px;
-}
-.yoga h3{
-    font-family:'Lora';
-    background: var(--gradient-color,
-     linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
-     background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  background-color: #1E0849;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+  position: relative;
 }
 
-.contact{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    
+.yoga {
+  margin-right: 200px;
+}
+
+.yoga h3 {
+  font-family: 'Lora';
+  background: var(--gradient-color,
+      linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 
-.footer-section{
-    margin-left:50px;
+.footer-section {
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 600px) {
-    footer {
-        flex-direction: column;
-    }
+  footer {
+    flex-direction: column;
+  }
 
-    .footer-section, .yoga {
-        width: 100%;
-    }
+  .footer-section,
+  .yoga {
+    width: 100%;
+  }
 
-   
+
 
 
 }
