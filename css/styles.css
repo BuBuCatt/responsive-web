@@ -153,93 +153,60 @@ header{
   /* === hamburger menu css === */
 
 /* Styles for the hamburger menu */
-.hamburger, .menu-items {
-    display: none; 
-    background: none;
-    border: none;
-    width: 100%;
-    
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* Hidden by default, shown in media query below */
+  cursor: pointer;
 }
 
+/* Mobile Menu */
 .mobile-menu {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 280px;
-    height: 640px;
-    background: rgba(255, 255, 255, 0.30);
-    backdrop-filter: blur(16px);
-    z-index: 2000;
-    flex-direction: column;
- 
-    
-
+  display: none;
+  position: fixed; /* Full screen overlay */
+  top: 0;
+  right: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.9); /* Black with transparency */
+  z-index: 1000; /* Make sure it's above other content */
+  overflow-y: auto; /* Enable scroll if needed */
 }
 
+/* Show the mobile menu when it has the 'active' class */
+.mobile-menu.active {
+  display: block;
+}
 
-
+/* Style for the close button */
 .close-menu {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 24px; 
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+
+/* Style the mobile menu links */
+.mobile-menu ul {
+  padding-top: 100px; /* Give some space from the top */
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile-menu ul li a {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* This will show the hamburger icon in smaller screens */
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: block;
   }
-
-
-/*  responsive for hamburgrmanu */
-@media (max-width: 768px)  {
-
-    .nav-items ul{
-        display: none;
-    }
- 
-
-
-    .mobile-icons{
-        display: flex;
-        align-items: center;
-        border: 2px solid;
-        position: relative;
-        left: 80%;
-
-    }
-
-
-    .moon-icon,.hamburger{
-        display: block;
-        margin: 0 10px;
-    }
-
-    .mobile-menu.active {
-        display: flex;
-      }
-
-
-
-    .hamburger{
-        order: 2;
-    }
-
-
-    .moon-icon{
-        order: 1;
-        cursor: pointer;
-    }
-
-    
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -423,9 +390,10 @@ header{
   gap: 2rem;
   padding:1rem;
   min-width:180px;
+  
 }
 
-.section-num-image>h1 {
+.section-num-image h1 {
   color: var(--text-color-day);
   font-family: Lora;
   font-size: clamp(28px, 5vw, 56px);
@@ -467,7 +435,7 @@ header{
  
 }
 
-.text-background-container>p {
+.text-background-container p {
   padding:10px;
   color:var(--primary-text-color);
   font-family: Poppins;
@@ -509,7 +477,7 @@ header{
       justify-content: center;
       align-items: center;
       padding:1rem;
-      
+      margin-top: 5rem;
   }
 
   .list-text-container{
@@ -533,7 +501,9 @@ header{
       min-width: 328px;;
       text-align: center;
   }
-
+  .next-button-container {
+    margin-bottom: 5rem;
+  }
 
   .next-button-container img{
       width: 100%;
@@ -546,8 +516,261 @@ header{
 }
 
 
+/*health section*/
+
+.health{
+  width:100%;
+  padding:3rem 164px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+}
+
+.health-hero-image{
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+ 
+}
+
+.health-hero{
+   
+  max-width:100%;
+  height:auto;
+  min-width:320px;
+}
+
+.health-text-container{
+  
+  display: flex; 
+  flex-direction: column; 
+  gap: 40px; 
+ 
+}
+
+
+.health-text-container>h1{
+  color: var(--text-color-day);
+  font-family: Lora;
+  font-size: clamp(32px,5vw,64px);
+  font-weight: 400;
+  width:570px;
+  max-width:100%;
+  height:auto;
+  min-width:289px;
+}
+
+.health-text-container>p{
+  color: var(--text-color-day);
+  font-family: Poppins;
+  font-size: clamp(15px,5vw,16px);
+  font-weight: 400;
+  width:579px;
+  max-width:100%;
+  height:auto;
+  min-width:331px;
+}
+
+.health-home{
+  display: inline-flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 64px;
+  background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  cursor: pointer;
+  color:#fff;
+  border:none;
+  width:163px;
+  max-width:100%;
+  height:auto;
+  min-width:158px;
+  font-family: Poppins;
+  font-size: clamp(12px,5vw,18px);
+  font-weight: 500;
+  
+}
 
 
 
+
+
+
+
+@media(max-width:768px){
+    
+
+  .health
+  {
+   
+      flex-direction: column;
+     
+      margin-top:6rem;
+  }
+
+  .health-hero-image{
+      order:10;
+  }
+
+  .health-text-container{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      gap:20px;
+  }
+
+  .health-text-container h1 {
+      width: auto;
+      text-align: center;
+      
+  }
+
+  .health-text-container p{
+      width: auto; 
+      text-align: center;
+  }
+
+ 
+
+  .health-home{
+      width:auto;
+  
+  }
+}
+
+
+/* Routine CSS */
+
+.routine{
+  width:100%;
+  padding:4rem 150px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:4rem;
+  
+}
+
+
+
+.routine-text-container{
+
+  display: flex; 
+  flex-direction: column; 
+  gap: 35px; 
+ 
+}
+
+.routine-text-container h1{
+  color: var(--text-color-day);
+  
+  font-family: Lora;
+  font-size: clamp(32px,5vw,64px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width:396px;
+  max-width:100%;
+  height:auto;
+  min-width:295px;
+}
+
+.routine-text-container p{
+  color: var(--text-color-day);
+  font-family: Poppins;
+  font-size: clamp(15px,5vw,16px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width:465px;
+  max-width:100%;
+  height:auto;
+  min-width:331px;
+}
+
+
+.routine-home{
+  display: inline-flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 64px;
+  background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  cursor: pointer;
+  color:#fff;
+  border:none;
+  width:214px;
+  max-width:100%;
+  height:auto;
+  min-width:158px;
+  font-family: Poppins;
+  font-size: clamp(12px,5vw,16px);
+
+  font-weight: 500;
+
+}
+
+
+.routine-hero-image{
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+ 
+}
+
+.routine-hero{
+  
+  max-width:100%;
+  height:auto;
+  min-width:300px;
+}
+
+
+@media(max-width:768px){
+  
+
+  .routine
+  {
+   
+      flex-direction: column;
+     
+      
+  }
 
   
+
+  .routine-text-container{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      gap:20px;
+  }
+
+  .routine-text-container h1 {
+      width: auto; 
+      text-align: center;
+      
+  }
+
+  .routine-text-container p{
+      width: auto; 
+      text-align: center;
+  }
+
+ 
+
+  .routine-home{
+      width:auto;
+  
+  }
+}
+
+
+/* End of routine section */
