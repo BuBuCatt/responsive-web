@@ -207,12 +207,32 @@ h3{
   align-items: center;
 
 }
-
+.footer-top-line {
+  position: absolute;
+  top: 80%; 
+  left:15%;
+  width: 70%;
+  border-top: 1.5px solid #A197B4; 
+  transform: translateY(-80%); 
+}
 
 .footer-section {
   margin-left: 50px;
 }
 
+.socialfooter{
+  position:absolute;
+  top:85%;
+  left:15%;
+}
+
+.copyright{
+  color:#A197B4;
+  position:absolute;
+  font-size:13px;
+  top:85%;
+  right:15%;
+}
 
 
 
