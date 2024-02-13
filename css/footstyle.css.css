@@ -212,9 +212,24 @@ h3{
 .footer-section {
   margin-left: 50px;
 }
+
+
+
+
+/* Style for mobile phones (small screens) */
+@media all and (max-width: 768px){
+	footer{
+    justify-content:center;
+    display:inline-block;
+    align-items:column;
+  }
+  .contact{
+    display:inline-block;
+    align-items:column;
+  }
 .footer-top-line {
   position: absolute;
-  top: 85%; 
+  top: 90%; 
   left:15%;
   width: 70%;
   border-top: 1.5px solid #A197B4; 
@@ -223,7 +238,7 @@ h3{
 
 .socialfooter{
   position:absolute;
-  top:88%;
+  top:93%;
   left:15%;
 }
 
@@ -231,20 +246,7 @@ h3{
   color:#A197B4;
   position:absolute;
   font-size:13px;
-  top:85%;
-  right:15%;
+  top:95%;
+  right:15%;d
 }
-
-@media screen and (max-width: 600px) {
-  footer {
-    flex-direction: column;
-  }
-
-  .footer-section,
-  .yoga {
-    width: 100%;
-  }
-
-
-
 }
