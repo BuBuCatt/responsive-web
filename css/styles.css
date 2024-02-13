@@ -10,6 +10,16 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--body-color-day);
+  
+}
+
 
 
 /* color variables */
@@ -28,11 +38,7 @@
 }
 
 
-body{
-    min-height: 100vh;
-    background: var(--body-color-day);
-    color: var(--text-color-day);
-  }
+
 
 
 
@@ -47,12 +53,32 @@ body{
 
 
 /* ------ nav css --------- */
+
+/* == Header === */
+
 header{
   height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Poppins';
 }
 .navbar {
+    position: relative;
+    height: 100%;
+    max-width: 1440px;
+    width: 100%;
+  
     display: flex;
     padding: 20px 40px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in;
   
 
 
@@ -70,13 +96,6 @@ header{
     -webkit-text-fill-color: transparent;
     padding-top: 10px;
 
-
-
-    border: 2px solid red;
-
- 
-
-    
 
   }
 
@@ -138,7 +157,8 @@ header{
     display: none; 
     background: none;
     border: none;
-    cursor: pointer;
+    width: 100%;
+    
 }
 
 .mobile-menu {
@@ -228,8 +248,8 @@ header{
   /* ---- Home section CSS ---- */
  #home{
 
-  margin: 48px 0;
-  height: 850px;
+  margin-top: 20%;
+  height: auto;
 
  }
 
@@ -321,8 +341,209 @@ header{
   .home-pic img{
     width: 400px;
     height: auto;
+    margin-bottom: 10%;
   }
 
+
+  @media only screen and (max-width: 768px) {
+    
+    .home-container {
+      display: flex;
+      flex-direction: column;
+ 
+        
+    }
+
+    aside p {
+      position: relative;
+      left: 10%;
+      text-align: center;
+    }
+
+    aside h2{
+      position: relative;
+      left: 10%;
+      text-align: center;
+    }
+
+
+
+    .home-pic img {
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 180px;
+      height:auto;
+    }
+
+    .home-btn button , .yoga-class-number{
+      width: 60%;
+      position: relative;
+      left: 20%;
+
+    }
+
+ 
+
+    
+}
+
+
+
+/* list-section*/
+.list-section {
+  width: 100%;
+  background-color: var(--body-color-day);
+  padding: 4rem 1rem;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  transition: all 0.5s ease-in-out;
+}
+
+.list {
+  height: 230px;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 8rem;
+  gap: 3rem;
+  position: relative;
+  
+}
+
+.section-num-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding:1rem;
+  min-width:180px;
+}
+
+.section-num-image>h1 {
+  color: var(--text-color-day);
+  font-family: Lora;
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: 500;
+
+
+  
+}
+
+.list-image {
+  width:350px;
+  max-width: 100%;
+  height: auto;
+  min-width:230px;
+}
+
+.list-text-container {
+  width:50%;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  padding:1rem;
+  
+  
+}
+
+
+
+.text-background-container{
+  padding:20px;
+  background-image: url("../assets/liststar-2-img.png") ;
+  background-repeat: no-repeat;
+  background-position: left top;
+  width:280px;
+  max-width: 100%;
+  height:auto;
+ 
+}
+
+.text-background-container>p {
+  padding:10px;
+  color:var(--primary-text-color);
+  font-family: Poppins;
+  font-size: clamp(12px,6vw,16px);
+  font-weight: 400;
+  color:var(--text-color-day);
+  z-index: 2;
+}
+
+.list-star {
+  position: absolute;
+  left:4%;
+  top: 10%;
+  max-width: 100%;
+  height:auto;
+  min-width:50px;
+
+}
+
+
+@media (max-width:768px) {
+
+  .list-section{
+      margin-top:10rem;
+      width:100%;
+      padding:0 1rem;
+  }
+  .list 
+  {
+      width:100%;
+      flex-direction: column;
+      padding:1rem 1rem;
+      
+  }
+
+  .section-num-image{
+      width:100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding:1rem;
+      
+  }
+
+  .list-text-container{
+      flex-direction: column;
+
+     
+  }
+  .list-text-container span{
+      display:block;
+  }
+
+  .list-image{
+      width:60%;
+      height:auto;
+     
+  }
+
+  .text-background-container{
+      width: 100%;
+      height:auto;
+      min-width: 328px;;
+      text-align: center;
+  }
+
+
+  .next-button-container img{
+      width: 100%;
+      height:auto;
+      min-width: 150px;
+      margin-bottom:2rem;
+  }
+
+ 
+}
 
 
 
