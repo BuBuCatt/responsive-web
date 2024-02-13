@@ -1,32 +1,54 @@
+.root {
+  --body-color: #FF52AF;
+  --title-color: #9F53FF;
+}
 .follow {
+  justify-content:center;
   display: flex;
   flex-direction: column;
   align-items: center;
+margin:0px 40px;
+
 }
 
 .insta {
   display: flex;
+  width: 1440px;
+ height: 500px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-.insta p {
+.follow p {
   color: var(--title-color, #220953);
   text-align: center;
+  font-family: 'Lora';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin:0px;
+}
 
+h4{
+  background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  margin:0px;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-align: center;
   font-family: 'Lora';
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  
 }
-
 .yopic {
-  width: 200px;
-  height: 300px;
-  margin: 50px;
+  width: 280px;
+height: 420px;
 }
 
 .text-content {
@@ -49,6 +71,7 @@
 .flw {
   border-radius: 64px;
   background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+  border:none;
   display: inline-flex;
   height: 88px;
   padding: 17px 17px 16px 20px;
@@ -67,9 +90,9 @@
 }
 
 .yo {
-  width: 400px;
-  height: 300px;
-  margin: 100px;
+  width: 500px;
+height: 255.576px;
+ 
 }
 section{
   width:100%;
@@ -89,7 +112,7 @@ align-items: center;
   height:374px;
   align-items:center;
   justify-content:center;
- 
+
   max-width: 600px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -104,6 +127,8 @@ line-height: normal;
 text-align:center;
 }
 
+
+
 .newsletter-description {
   margin-bottom: 1.5em;
 }
@@ -111,21 +136,24 @@ text-align:center;
 .newsletter-input {
   padding: 1em;
   border: none;
-  border-radius: 25px;
+  border-radius: 48px;margin-left: 0;
   margin-right: -50px;
   flex-grow: 1;
   height: 50px;
 }
 
 .newsletter-button {
+  position:relative;
+align-items: center;
+gap: 4px;
+width:130px;
   border-radius: 64px;
   background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
   box-shadow: 0px 4px 12px 0px rgba(91, 10, 255, 0.25);
   height: 50px;
   border: none;
   color: white;
-  padding: 1em 2em;
-  margin-left: -50px;
+  margin-left: -85px;
   border-radius: 25px;
   cursor: pointer;
   font-size: 1em;
@@ -139,14 +167,11 @@ text-align:center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.5em;
+  padding: 1em;
+    border-radius: 25px;
 }
 
 /* footer */
-.root {
-  --body-color: #FF52AF;
-  --title-color: #9F53FF;
-}
 
 footer {
   background-color: #1E0849;
@@ -155,8 +180,9 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 32px 0;
+  padding: 64px 0;
   position: relative;
+  
 }
 
 .yoga {
@@ -172,6 +198,9 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
+h3{
+  font-family:'Lora';
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -183,6 +212,28 @@ footer {
 .footer-section {
   margin-left: 50px;
 }
+.footer-top-line {
+  position: absolute;
+  top: 85%; 
+  left:15%;
+  width: 70%;
+  border-top: 1.5px solid #A197B4; 
+  transform: translateY(-80%); /* 선을 정확하게 중앙에 위치시키기 위해 사용합니다 */
+}
+
+.socialfooter{
+  position:absolute;
+  top:88%;
+  left:15%;
+}
+
+.copyright{
+  color:#A197B4;
+  position:absolute;
+  font-size:13px;
+  top:85%;
+  right:15%;
+}
 
 @media screen and (max-width: 600px) {
   footer {
@@ -193,7 +244,6 @@ footer {
   .yoga {
     width: 100%;
   }
-
 
 
 
