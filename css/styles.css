@@ -45,8 +45,12 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-top: 10px;
-    position: relative;
-    left: 15%;
+
+
+
+    border: 2px solid red;
+
+ 
 
     
 
@@ -99,6 +103,84 @@ header{
   .moon-icon{
     margin: 20px;
   }
+
+  /* === hamburger menu css === */
+
+/* Styles for the hamburger menu */
+.hamburger, .menu-items {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*  responsive for hamburgrmanu */
+@media (max-width: 768px)  {
+ 
+
+
+    .mobile-icons{
+        display: flex;
+        align-items: center;
+        border: 2px solid;
+        position: relative;
+        left: 80%;
+
+    }
+
+
+
+    .nav-items ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top:90px;
+        left: 0;
+        background-color: var(--white-color);
+        z-index: 1000;
+    }
+
+    .nav-items ul.active{
+        display: flex;
+    }
+
+
+    .moon-icon,.hamburger{
+        display: block;
+        margin: 0 10px;
+    }
+
+
+
+    .hamburger{
+        order: 2;
+    }
+
+
+    .moon-icon{
+        order: 1;
+        cursor: pointer;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
   /* ---- Home section CSS ---- */
  #home{
