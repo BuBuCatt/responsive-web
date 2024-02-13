@@ -1,13 +1,26 @@
- // Wait for the DOM to fully load before running the script
- document.addEventListener('DOMContentLoaded', function() {
-    // Select the hamburger icon
-    var hamburger = document.querySelector('.hamburger');
-    // Select the navigation menu
-    var navItems = document.querySelector('.nav-items ul');
+  // Wait for the DOM to fully load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Open the mobile menu when the hamburger icon is clicked
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.mobile-menu').classList.add('active');
+    });
 
-    // Add a click event listener to the hamburger icon
-    hamburger.addEventListener('click', function() {
-      // Toggle the .active class on the navigation menu
-      navItems.classList.toggle('active');
+    // Close the mobile menu when the close icon is clicked
+    document.querySelector('.close-menu').addEventListener('click', function() {
+      document.querySelector('.mobile-menu').classList.remove('active');
     });
   });
+
+
+
+
+//   Day and night 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const toggleButton = document.getElementById('theme-toggle');
+    
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('night');
+    });
+  });
+  

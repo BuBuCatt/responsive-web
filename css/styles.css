@@ -10,17 +10,41 @@
     box-sizing: border-box;
 }
 
-body{
-  min-height: 100vh;
-  background: var(--body-color, #F5F0FF);
-}
+
 
 /* color variables */
 :root{
-    --body-color:#F5F0FF;
+
+    /* Day Theme colors */
+    --body-color-day:#F5F0FF;
+    --text-color-day: #220953;
+
     --title-color:#220953;
     --white-color:#ffffff;
+
+     /* Night theme colors */
+    --body-bg-night: #14092A;
+    --text-color-night: #D1C0F1;
 }
+
+
+body{
+    min-height: 100vh;
+    background: var(--body-color-day);
+    color: var(--text-color-day);
+  }
+
+
+
+/* day and night  */
+.night {
+    background-color: var(--body-bg-night);
+    color: var(--text-color-night);
+  }
+
+
+
+
 
 /* ------ nav css --------- */
 header{
@@ -91,7 +115,7 @@ header{
     text-decoration: none;
     margin: 20px;
     font-size: 16px;
-    color: var(--title-color, #220953);
+    color: var(--text-color-day);
     font-weight: 500;
 
   }
@@ -102,6 +126,9 @@ header{
 
   .moon-icon{
     margin: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color-day);
   }
 
   /* === hamburger menu css === */
@@ -114,9 +141,39 @@ header{
     cursor: pointer;
 }
 
+.mobile-menu {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 640px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(16px);
+    z-index: 2000;
+    flex-direction: column;
+ 
+    
+
+}
+
+
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px; 
+  }
+
 
 /*  responsive for hamburgrmanu */
 @media (max-width: 768px)  {
+
+    .nav-items ul{
+        display: none;
+    }
  
 
 
@@ -130,27 +187,14 @@ header{
     }
 
 
-
-    .nav-items ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top:90px;
-        left: 0;
-        background-color: var(--white-color);
-        z-index: 1000;
-    }
-
-    .nav-items ul.active{
-        display: flex;
-    }
-
-
     .moon-icon,.hamburger{
         display: block;
         margin: 0 10px;
     }
+
+    .mobile-menu.active {
+        display: flex;
+      }
 
 
 
@@ -177,7 +221,6 @@ header{
 
 
 }
-
 
 
 
