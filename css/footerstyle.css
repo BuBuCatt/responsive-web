@@ -1,0 +1,83 @@
+footer {
+    background-color: #1E0849;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0; /* 기존 설정 유지 */
+    position: relative; /* 가상 요소를 위한 상대 위치 설정 */
+}
+.contact{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.footer-section{
+    margin-left: 80px; 
+}
+.yoga{
+    margin-right:200px;
+}
+
+.yoga h3{
+    font-family: 'Lora';
+    font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.yoga p{
+    font-family:'Poppins';
+    font-size:16px;
+    font-style:normal;
+    font-weight:400;
+    line-height:normal;
+}
+/* 가운데 하얀색 선 추가 */
+footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70%;
+    height: 0.5px;
+    background-color: white; 
+    z-index: 1;
+}
+
+.sns {
+    order: 3; 
+    width: 192px; 
+    height: 24px; 
+    align-self: flex-end; 
+    position: relative; 
+    top: 2px;
+    right:980px; 
+    margin-top: 20px; 
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-section, .yoga {
+        width: 100%;
+    }
+
+    footer::after {
+        top: auto;
+        bottom: 100px;
+        left: 50%;
+        width: 2px; 
+        height: 50%; 
+    }
+
+    .sns {
+        order: 1; 
+        align-self: center; 
+        top: 0; 
+    }
+}
