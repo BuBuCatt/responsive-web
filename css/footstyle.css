@@ -1,7 +1,22 @@
 .root {
   --body-color: #FF52AF;
   --title-color: #9F53FF;
+  --body-color-day:#F5F0FF;
+    --text-color-day: #220953;
+
+    --title-color:#220953;
+    --white-color:#ffffff;
+
+     /* Night theme colors */
+    --body-bg-night: #14092A;
+    --text-color-night: #D1C0F1;
+
 }
+.night {
+  background-color: var(--body-bg-night);
+  color: var(--text-color-night);
+}
+
 .follow {
   justify-content:center;
   display: flex;
@@ -269,4 +284,13 @@ h3{
   top:95%;
   right:15%;d
 }
+}
+
+@media (prefers-color-scheme: dark) {
+  .follow p{
+    color: var(--text-color-night, #D1C0F1);
+  }
+  footer{
+    background-color:var(--body-bg-night,#14092A);
+
 }
