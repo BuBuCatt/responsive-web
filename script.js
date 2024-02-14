@@ -26,6 +26,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     toggleButton.addEventListener('click', () => {
       document.body.classList.toggle('night');
+
+          if (document.body.classList.contains('night')) {
+            // Change to sun icon for night theme
+            toggleButton.classList.remove('fa-moon');
+            toggleButton.classList.add('fa-sun');
+        } else {
+            // Change back to moon icon for day theme
+            toggleButton.classList.remove('fa-sun');
+            toggleButton.classList.add('fa-moon');
+        }
     });
   });
   
