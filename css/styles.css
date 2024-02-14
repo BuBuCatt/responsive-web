@@ -165,6 +165,10 @@ header{
     color: var(--text-color-day);
   }
 
+  .fa-sun{
+    color: var(--text-color-night);
+  }
+
   /* === hamburger menu css === */
 
 
