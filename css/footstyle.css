@@ -46,7 +46,7 @@
     line-height: normal;
     
   }
-  .yopic {
+  .one,.two {
     width: 280px;
   height: 420px;
   }
@@ -89,7 +89,7 @@
     gap: 20px;
   }
   
-  .yo {
+  .three,.four {
     width: 500px;
   height: 255.576px;
    
@@ -107,14 +107,12 @@
     background: linear-gradient(135deg, #FF7BAC 0%, #B77BFF 100%);
     border-radius: 25px;
     color: white;
-    padding: 0px 224px;
-    width: 1440px;
-    height:374px;
+    padding: 32px 224px;
     align-items:center;
     justify-content:center;
-  
-    max-width: 600px;
-    text-align: center;
+    width: 992px;
+    height: 374px;
+    flex-shrink: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
@@ -139,7 +137,7 @@
     border-radius: 48px;margin-left: 0;
     margin-right: -50px;
     flex-grow: 1;
-    height: 50px;
+    height: 60px;
   }
   
   .newsletter-button {
@@ -237,36 +235,119 @@
   
   
   /* Style for mobile phones (small screens) */
-  @media all and (max-width: 768px){
-      footer{
-      justify-content:center;
-      display:inline-block;
-      align-items:column;
+  @media all and (max-width: 768px) {
+
+
+    .downinsta {
+      display: flex;
+      flex-direction: column;
+      /* Layout images in a row */
+      justify-content: center;
+      /* Center the images in the row */
     }
-    .contact{
-      display:inline-block;
-      align-items:column;
+    .one,.two{
+      width: 140px;
+      height: 210px;
+      flex-shrink: 0;
+  position:absolute;
     }
-  .footer-top-line {
-    position: absolute;
-    top: 90%; 
-    left:15%;
-    width: 70%;
-    border-top: 1.5px solid #A197B4; 
-    transform: translateY(-80%); /* 선을 정확하게 중앙에 위치시키기 위해 사용합니다 */
+    .one{
+      top:780%; /* adjust as necessary */
+      left: 10%; /* adjust as necessary */
+    }
+    
+    .two {
+      top: 800%; /* adjust as necessary */
+      right: 10%; /* adjust as necessary */
+    }
+  
+    
+  
+    .three,.four {
+      position:absolute;
+      width: 300px;
+      height: 150px;
+      transform: rotate(-5deg);
+      flex-shrink: 0;
+  
+    }
+  .three{
+    top:850%;
+    left:20%;
+
+  }
+  .four{
+    top:900%;
+    left:20%;
+  }
+  section{
+    margin:20px;
+    padding: 20px;
+  }
+    .newsletter-container {
+      position:absolute;
+      top:950%;
+      padding: 32px 0px 48px 0px;
+     
+    
+    }
+  
+    .newsletter-input,
+    .newsletter-button {
+      margin: 10px 0;
+      /* 작은 화면에서의 마진 조정 */
+      width: 296px;
+      height: 64px;
+    }
+  
+    .subscription-box {
+      flex-direction: column;
+      /* 작은 화면에서 버튼과 인풋을 세로로 배열 */
+    }
+  
+    footer {
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      position:absolute;
+      top:1040%;
+      width:100%;
+    }
+  
+    .contact {
+      display: block;
+      position: relative;
+      right: 150px;
+      margin: 10px;
+  
+    }
+  
+    .footer-top-line {
+      height: 1px;
+      width: 200%;
+      margin: 20px 0;
+    }
+  
+  
+    .socialfooter {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  
+    }
+  
+    .socialfooter img {
+      position: absolute;
+      margin: 0 10px;
+      width: 50%;
+      left:50%;
+  
+    }
+  
+    .copyright {
+      font-size: 0.75rem;
+      margin-top: 10px;
+      text-align: center;
+    }
   }
   
-  .socialfooter{
-    position:absolute;
-    top:93%;
-    left:15%;
-  }
-  
-  .copyright{
-    color:#A197B4;
-    position:absolute;
-    font-size:13px;
-    top:95%;
-    right:15%;
-  }
-}
