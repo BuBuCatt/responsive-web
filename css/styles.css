@@ -14,11 +14,31 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   min-height: 100vh;
   background-color: var(--body-color-day);
   
 }
+
+/* day and night  */
+.night {
+  background-color: var(--body-bg-night);
+  color: var(--text-color-night);
+}
+
+.night .list-section{
+  background-color: var(--body-bg-night);
+}
+
+
+.nav-items a, .aside h2, .aside p, .yoga-class-number h3, .yoga-class-number p, .list-section .section-num-image h1, .list-text-container p, .health-text-container>h1, .health-text-container>p, .routine-text-container h1, .routine-text-container p {
+  color: var(--text-color-day); 
+}
+
+ .night .nav-items a, .night aside h2, .night aside p, .night .yoga-class-number h3, .night .yoga-class-number p, .night .list-section .section-num-image h1, .night .list-text-container p, .night .health-text-container>h1, .night .health-text-container>p, .night .routine-text-container h1, .night .routine-text-container p {
+  color: var(--text-color-night); 
+}
+
 
 
 
@@ -42,11 +62,6 @@ body{
 
 
 
-/* day and night  */
-.night {
-    background-color: var(--body-bg-night);
-    color: var(--text-color-night);
-  }
 
 
 
@@ -316,6 +331,8 @@ header{
     height: auto;
     margin-bottom: 10%;
   }
+
+  
 
 
   @media only screen and (max-width: 768px) {
