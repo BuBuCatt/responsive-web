@@ -1,16 +1,21 @@
-  // Wait for the DOM to fully load
-  document.addEventListener('DOMContentLoaded', function() {
-    // Open the mobile menu when the hamburger icon is clicked
-    document.querySelector('.hamburger').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.add('active');
-    });
+document.addEventListener('DOMContentLoaded', function () {
+  // Select the hamburger icon
+  const hamburger = document.querySelector('.hamburger');
+  // Select the menu
+  const navMenu = document.querySelector('.nav-items ul');
 
-    // Close the mobile menu when the close icon is clicked
-    document.querySelector('.close-menu').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.remove('active');
-    });
+  const closeMenu = document.querySelector('.close-menu');
+
+  // Listen for a click on the hamburger
+  hamburger.addEventListener('click', function () {
+    // Toggle the 'active' class on the menu
+    navMenu.classList.toggle('active');
   });
 
+
+
+
+});
 
 
 

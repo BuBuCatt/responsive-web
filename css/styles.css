@@ -152,62 +152,68 @@ header{
 
   /* === hamburger menu css === */
 
+
 /* Styles for the hamburger menu */
-/* Hamburger Menu Icon */
-.hamburger {
-  display: none; /* Hidden by default, shown in media query below */
-  cursor: pointer;
+
+.mobile-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
 }
 
-/* Mobile Menu */
-.mobile-menu {
+
+.mobile-menu, .hamburger{
   display: none;
-  position: fixed; /* Full screen overlay */
-  top: 0;
-  right: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0,0,0,0.9); /* Black with transparency */
-  z-index: 1000; /* Make sure it's above other content */
-  overflow-y: auto; /* Enable scroll if needed */
-}
-
-/* Show the mobile menu when it has the 'active' class */
-.mobile-menu.active {
-  display: block;
-}
-
-/* Style for the close button */
-.close-menu {
-  font-size: 3rem;
-  color: white;
-  position: absolute;
-  top: 20px;
-  right: 40px;
   cursor: pointer;
+  
 }
 
-/* Style the mobile menu links */
-.mobile-menu ul {
-  padding-top: 100px; /* Give some space from the top */
-  list-style-type: none;
-  text-align: center;
+.nav-items ul.active {
+  display: flex; 
+  flex-direction: column; 
+  position: absolute;
+  width: 100%; 
+  height: auto;
+  top: 100px; 
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(16px);
+ 
+  
+ 
 }
 
-.mobile-menu ul li a {
-  display: block;
-  padding: 20px;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
 
-/* This will show the hamburger icon in smaller screens */
-@media screen and (max-width: 768px) {
-  .hamburger {
-      display: block;
+
+
+@media (max-width: 768px) {
+ 
+  .nav-items ul {
+    display: none;
   }
+
+  
+  .nav-items ul.active {
+    display: block; 
+
+   
+  }
+
+ .hamburger{
+    display: block;
+
+  }
+
+  .mobile-icons {
+    position: relative;
+    left: 80%;
+    
+  }
+
+  
 }
+
+
+
 
 
 
