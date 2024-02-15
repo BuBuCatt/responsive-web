@@ -73,13 +73,13 @@
     <main>
          <!-- Home Section -->
         <section id="home">
-            <div class="home-container">
+            <div class="home-container ">
                 <!-- left part of home section -->
                 <aside>
 
-                    <h2>Choose Your <br> Best <span> Yoga </span> <img src="./assets/home-star.png" class="home-star-pic"> <br> Teacher</h2>
+                    <h2 >Choose Your <br> Best <span> Yoga </span> <img src="./assets/home-star.png" class="home-star-pic"> <br> Teacher</h2>
 
-                    <p>Calm your mind and body with the best yoga <br> teachers available, 
+                    <p >Calm your mind and body with the best yoga <br> teachers available, 
                         relax your day and stay positive.
                     </p>
 
@@ -198,69 +198,109 @@
 
         <!-- =====******* Follow Section ******** ======= -->
 
-        <div class="follow">
-            <div class="insta">
-                <img  class="one" src="./assets/follow-yoga-1.png">
-                <div class="follow"><p>Follow Us On <br>Instagram</p>
-               <h4>#YOGA</h4>
-                <button class="flw">Follow-></button></div>
-                <img  class="two" src="./assets/follow-yoga-2.png">
-            </div>
-            <div class="downinsta">
-                <img class="three" src="./assets/follow-yoga-3.png">
-                <img class="four" src="./assets/follow-yoga-4.png">
-            </div>
-        </div>
-        <section>
-      
-        <div class="newsletter-container">
-            <div class="newsletter-header">
-                <h2 id="jo">Join our newsletter</h2>
-            </div>
-            <div class="newsletter-description">
-                <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much more. Just enter your email.</p>
-            </div>
-            <form action="YOUR_SUBSCRIPTION_ENDPOINT" method="POST" class="subscription-box">
-                <input type="email" name="email" placeholder="For latest updates send mail" class="newsletter-input">
-                <button type="submit" class="newsletter-button">Subscribe &rarr;</button>
-            </form>
-        </div>
-        </section>
-    
-        <footer>
-    
-           
-                    <div class="yoga">
-                        <h3>Yoga</h3>
-                        <p>Take care of your health<br> and your mind with the best <br>Yoga classes.</p>
-                    </div>
-                    <div class="contact">
-                        <div class="footer-section">
-                            <h3>Address</h3>
-                            <p>12345 El Sol Avenue<br>, Lima, Peru</p>
-                        </div>
-                        <div class="footer-section">
-                            <h3>Contact</h3>
-                            <p>+123 456 7890</p>
-                            <p>yoga@email.com</p>
-                        </div>
-                        <div class="footer-section">
-                            <h3>Office</h3>
-                            <p>Monday - Saturday</p>
-                            <p>9AM - 10PM</p>
-                            
-                        </div>
-                        <div class="footer-top-line"></div>
-                        <img class="socialfooter" src="./assets/Social footer.png">
-                        <p class="copyright">©Copyright Bedimcode. All rights reserved</p>
-                    </div>
-                </footer>
-            
-            </body>
-            
-            </html>
+         <!--Follow Section-->
+         <section class="follow-section" id="follow">
+            <div class="follow-section-container">
+                <div class="yoga-container-top">
+                    <img src="./assets/follow-yoga-1.png" alt="yoga-1" class="yoga-animation-top" id="yogaImg1">
 
-    <!-- JavaScript files at the end of the body to load the page faster -->
-    <script src="./script.js"></script>
+                    <div class="follow-text-container">
+                        <h1>Follow Us On Instagram <span class="hashtag">#YOGA</span></h1>
+                        <div class="move-follow-button">
+                            <button class="follow-btn">Follow<br>→</button>
+                        </div>
+                    </div>
+                   
+                    <img src="./assets/follow-yoga-2.png" alt="yoga-4" class="yog" id="yogaImg4">
+                </div>
+                <div class="yoga-container-bottom">
+
+                    <img src="./assets/follow-yoga-3.png" alt="yoga-2" class="yogi" id="yogaImg2">
+
+                    <img src="./assets/follow-yoga-4.png" alt="yoga-3" class="yogi" id="yogaImg3">
+
+                </div>
+            </div>
+        </section>
+        <!--End of Follw Section-->
+
+        <!-- newsletter-section -->
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <h1>
+                        Join our newsletter
+                    </h1>
+                    <p>Subscribe to our newsletter to be aware of many things on discounts, gifts, training and much
+                        more. Just enter your email.</p>
+                    <div class="text-box">
+                        <input type="text" placeholder="For latest update send mail">
+                        <button type="button">
+                            <span class="subscribe-text">Subscribe→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--End of newsletter section-->
+        
+        <!--Footer Section-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="content-footer">
+                    <div class="one">
+                        <div class="logo-area">
+                            <div class="logo-name">
+                                <h3>YOGA</h3>
+                            </div>
+                            <p>Take care of your health and your mind with the best Yoga classes.</p>
+                        </div> 
+                        <!-- 1st Colum -->
+                        <div class="two">
+                            <div class="footer-col">
+                                <h4>Address</h4>
+                                <div class="col-area">
+                                    <p>12345 M/01 Sol</p>
+                                    <p>Avenue, Lima, Peru</p>
+                                </div>
+                            </div> 
+                            <!-- 2nd Colum -->
+                            <div class="footer-col">
+                                <h4>Contact</h4>
+                                <div class="col-area">
+                                    <p>+123 456 7890</p>
+                                    <p>yoga@email.com</p>
+                                </div>
+                            </div>
+                            <!-- 3rd Colum -->
+                            <div class="footer-col">
+                                <h4>Office</h4>
+                                <div class="col-area">
+                                    <p>Monday - Saturday</p>
+                                    <p>9AM - 10PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="three">
+                    <div class="divider"></div>
+                    <div class="footer-bottom-content">
+                        <div class="social-icons">
+                            <img src="./assets/Social footer.png" >
+                        </div>
+                        <div class="footer-bottom">
+                            <p>&copy; Copyright Bedimcode. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--End of footer-->
+
+    </main>
 </body>
+
 </html>
