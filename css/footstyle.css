@@ -507,6 +507,7 @@ background:var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 8
 
 .footer .one{
   display:flex;
+  flex-direction:column;
     justify-content: space-between;
  
 }
